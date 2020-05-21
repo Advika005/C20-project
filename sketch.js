@@ -33,6 +33,9 @@ function draw() {
   text("Global Car Safety Organisation",670,30)
   if(wall.x-car.x<(car.width+wall.width)/2)
   {
+   if(car.x>1450){
+      car.x =1444;
+    }
     car.velocityX = 0;
     deform();
   }
